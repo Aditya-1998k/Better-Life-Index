@@ -9,31 +9,7 @@ venv/
 env/
 .venv/
 
-# Jupyter / Colab
-.ipynb_checkpoints/
-
 # Logs
 *.log
 var/log/
-
-# Model files
-*.joblib
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# IDE files (VS Code, PyCharm)
-.vscode/
-.idea/
-
-# Byte-compiled / temp files
-*.swp
-*.swo
-*.bak
-
-# Distribution / packaging
-build/
-dist/
-*.egg-info/
 
