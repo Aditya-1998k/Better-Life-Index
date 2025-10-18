@@ -1,6 +1,9 @@
 # Better Life Index Predictor API
 
-A **FastAPI-based REST API** that predicts the Better Life Index (BLI) for a country based on its GDP per capita. The API returns the predicted BLI along with a comparison to the average.
+A **FastAPI-based REST API** that predicts the Better Life Index (BLI) for a country based on its GDP per capita. The API returns the predicted BLI along with a comparison to the average. I am using two model one is trained with linear regression which is once trained will not look into the training data again, and always use global data for prediction. And using 2nd model trained with kmeans algorithm which uses each time while prediction training data, to predict for the new data using the 3 nearest neibour.
+
+Model Training file: [Training info and Code](https://github.com/Aditya-1998k/Better-Life-Index/blob/main/backend/models/Better_life_index.ipynb)  
+Colab Link : [Google colab](https://github.com/Aditya-1998k/Better-Life-Index/blob/main/backend/models/Better_life_index.ipynb)
 
 ---
 
