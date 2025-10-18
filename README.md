@@ -33,7 +33,7 @@ Better-Life-Index/
 
 - Predict Better Life Index using GDP per capita.
 - Returns whether the country's BLI is "better than average" or "worse than average".
-- Logs all predictions and validation errors to `var/log/backend.log`.
+- Logs all predictions and validation errors to `log/backend.log` and `log/model_loader.log`.
 - Swagger UI available at `/docs` for easy testing.
 - Clean separation of concerns: model loading, logging, and API logic.
 
