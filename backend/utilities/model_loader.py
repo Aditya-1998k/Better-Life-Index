@@ -4,7 +4,7 @@ from utilities.logging_config import get_logger
 
 logger = get_logger("model_loader")
 
-def load_model(model_filename: str = "better_life_model.pkl"):
+def load_model(model_filename):
     """
     Load a trained model from the models directory.
     Returns the model object.

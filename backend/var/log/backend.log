@@ -1,8 +1,2 @@
-2025-10-18 10:15:41 [INFO] backend: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/backend/../models/better_life_model.pkl
-2025-10-18 10:15:49 [INFO] backend: Prediction for Cyprus: 5.57
-2025-10-18 10:16:08 [INFO] backend: Prediction for Cyprus: 5.57
-2025-10-18 10:33:18 [INFO] backend: Prediction for Cyprus: 5.57
-2025-10-18 10:45:53 [INFO] backend: Prediction for Cyprus: 5.57
-2025-10-18 10:47:58 [INFO] backend: Prediction for Cyprus: 5.57
-2025-10-18 10:49:32 [INFO] backend: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/backend/../models/better_life_model.pkl
-2025-10-18 10:53:28 [INFO] backend: Prediction for Cyprus: 5.57
+2025-10-18 16:43:01 [INFO] backend: Prediction for India: 18.06 with linear regression model.
+2025-10-18 16:43:01 [INFO] backend: Prediction for India: 7.30 with kmeans cluster model.
