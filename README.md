@@ -60,7 +60,8 @@ pip install -r backend/requirements.txt
 3. Access Swagger UI: http://127.0.0.1:8000/docs
 <img width="1326" height="676" alt="image" src="https://github.com/user-attachments/assets/b2261661-c308-4fce-ab65-4890e673cf6f" />
 4. PostMan
-<img width="921" height="494" alt="image" src="https://github.com/user-attachments/assets/436ec0a5-d41c-4409-af81-91dc18b81fa7" />
+<img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/67ecc21f-1028-4e97-918c-0be7f2d18662" />
+
 
 ---
 
