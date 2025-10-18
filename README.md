@@ -1,16 +1,66 @@
-# Better Life Index Prediction
+# Better Life Index Predictor API
 
-A Machine Learning project to predict **Life Satisfaction** of countries based on economic and social indicators, using **Linear Regression** and **k-Nearest Neighbors (k-NN) Regression**.
+A **FastAPI-based REST API** that predicts the Better Life Index (BLI) for a country based on its GDP per capita. The API returns the predicted BLI along with a comparison to the average.
 
 ---
 
-## 📖 Project Overview
+## Project Structure
+```text
+Better-Life-Index/
+│
+├── backend/
+│ ├── app.py 
+│ ├── utilities/
+│ │ ├── init.py
+│ │ ├── logging_config.py
+│ │ └── model_loader.py
+| |
+│ ├── var/log/ # Logs for predictions
+| |
+| ├── models/
+|    ├── better_life_model.pkl # Trained Linear Regression model
+|    └── Better_Life_Index.ipynb# Notebook for model training
+│
+├── requirements.txt
+└── .gitignore
+```
+---
 
-The **Better Life Index** project aims to analyze how factors like **GDP per capita** influence the life satisfaction of a country. Using the Life Satisfaction dataset (`lifesat.csv`) from [Aurélien Géron’s data repository](https://github.com/ageron/data), we explore:
+## Features
 
-- The relationship between GDP per capita and life satisfaction.
-- How Linear Regression can model the global trend.
-- How k-Nearest Neighbors (k-NN) Regression can predict values based on nearest countries.
+- Predict Better Life Index using GDP per capita.
+- Returns whether the country's BLI is "better than average" or "worse than average".
+- Logs all predictions and validation errors to `var/log/backend.log`.
+- Swagger UI available at `/docs` for easy testing.
+- Clean separation of concerns: model loading, logging, and API logic.
+
+---
+
+## Requirements
+
+- Python 3.10+
+- FastAPI
+- scikit-learn
+- pandas
+- numpy
+- joblib
+- uvicorn
+
+## Project Setup
+1. create a virtual Environment: `python -m venv .venv`
+2. Activate virtual environment: `source .venv/bin/activate`
+3. Install the dependency
+```bash
+pip install -r backend/requirements.txt
+```
+
+## Run the API
+1. `cd backend`
+2. run the command : `uvicorn app:app --reload`
+3. Access Swagger UI: http://127.0.0.1:8000/docs
+<img width="1326" height="676" alt="image" src="https://github.com/user-attachments/assets/b2261661-c308-4fce-ab65-4890e673cf6f" />
+4. PostMan
+<img width="921" height="494" alt="image" src="https://github.com/user-attachments/assets/436ec0a5-d41c-4409-af81-91dc18b81fa7" />
 
 ---
 
