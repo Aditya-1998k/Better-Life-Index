@@ -1,2 +1,4 @@
 2025-10-18 16:46:18 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/backend/utilities/../models/better_life_model_linear_regression.pkl
 2025-10-18 16:46:18 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/backend/utilities/../models/better_life_model_kmeans.pkl
+2025-10-19 14:49:57 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/utilities/../models/better_life_model_linear_regression.pkl
+2025-10-19 14:49:57 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/utilities/../models/better_life_model_kmeans.pkl

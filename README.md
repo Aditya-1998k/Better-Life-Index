@@ -11,18 +11,17 @@ Colab Link : [Google colab](https://github.com/Aditya-1998k/Better-Life-Index/bl
 ```text
 Better-Life-Index/
 │
-├── backend/
-│ ├── app.py 
-│ ├── utilities/
-│ │ ├── init.py
-│ │ ├── logging_config.py
-│ │ └── model_loader.py
-| |
-│ ├── var/log/ # Logs for predictions
-| |
-| ├── models/
-|    ├── better_life_model.pkl # Trained Linear Regression model
-|    └── Better_Life_Index.ipynb# Notebook for model training
+| ── app.py 
+│── utilities/
+│  ├── init.py
+│  ├── logging_config.py
+│  └── model_loader.py
+| 
+│── var/log/ # Logs for predictions
+|
+|── models/
+|   ├── better_life_model.pkl # Trained Linear Regression model
+|   └── Better_Life_Index.ipynb# Notebook for model training
 │
 ├── requirements.txt
 └── .gitignore
