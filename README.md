@@ -69,6 +69,9 @@ pip install -r backend/requirements.txt
 ### Email Summary:
 <img width="1080" height="745" alt="image" src="https://github.com/user-attachments/assets/90105b7b-4bbb-4183-8f52-1a4a7f8bf161" />
 
+For mail Rabbitmq SOA agent consumer should be up and running:
+<img width="1092" height="487" alt="image" src="https://github.com/user-attachments/assets/f0b32c7f-c922-4685-9394-bbcba086a121" />
+
 
 ---
 
