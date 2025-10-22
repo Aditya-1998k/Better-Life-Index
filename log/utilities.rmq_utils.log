@@ -1,0 +1,113 @@
+2025-10-22 12:25:38 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: [Errno -3] Temporary failure in name resolution
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 29, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 16, in create_connection
+    connection = pika.BlockingConnection(
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/utils/selector_ioloop_adapter.py", line 565, in _resolve
+    result = socket.getaddrinfo(self._host, self._port, self._family,
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2025-10-22 12:26:51 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: [Errno -3] Temporary failure in name resolution
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 29, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 16, in create_connection
+    connection = pika.BlockingConnection(
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/utils/selector_ioloop_adapter.py", line 565, in _resolve
+    result = socket.getaddrinfo(self._host, self._port, self._family,
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2025-10-22 12:30:42 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: [Errno -3] Temporary failure in name resolution
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 29, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 16, in create_connection
+    connection = pika.BlockingConnection(
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/utils/selector_ioloop_adapter.py", line 565, in _resolve
+    result = socket.getaddrinfo(self._host, self._port, self._family,
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2025-10-22 12:31:11 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: [Errno -3] Temporary failure in name resolution
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 29, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 16, in create_connection
+    connection = pika.BlockingConnection(
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 360, in __init__
+    self._impl = self._create_connection(parameters, _impl_class)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
+    raise self._reap_last_connection_workflow_error(error)
+  File "/home/gaditya/instances/projects/Better-Life-Index/.venv/lib/python3.10/site-packages/pika/adapters/utils/selector_ioloop_adapter.py", line 565, in _resolve
+    result = socket.getaddrinfo(self._host, self._port, self._family,
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+2025-10-22 12:35:23 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 38, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 31, in create_connection
+    raise ConnectionError(f"Could not connect to RabbitMQ at {host}:{port} after {retries} attempts")
+ConnectionError: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+2025-10-22 12:36:49 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 38, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 31, in create_connection
+    raise ConnectionError(f"Could not connect to RabbitMQ at {host}:{port} after {retries} attempts")
+ConnectionError: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+2025-10-22 12:39:32 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 38, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 31, in create_connection
+    raise ConnectionError(f"Could not connect to RabbitMQ at {host}:{port} after {retries} attempts")
+ConnectionError: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+2025-10-22 12:41:46 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 38, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 31, in create_connection
+    raise ConnectionError(f"Could not connect to RabbitMQ at {host}:{port} after {retries} attempts")
+ConnectionError: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+2025-10-22 12:44:07 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 38, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 31, in create_connection
+    raise ConnectionError(f"Could not connect to RabbitMQ at {host}:{port} after {retries} attempts")
+ConnectionError: Could not connect to RabbitMQ at 127.0.0.1:5672 after 5 attempts
+2025-10-22 12:45:30 [ERROR] utilities.rmq_utils: RabbitMQ publish failed: 
+Traceback (most recent call last):
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 39, in publish_to_rabbimq
+    connection = create_connection()
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 16, in create_connection
+    os.getenv("RABBITMQ_PASS", "guest")
+  File "/home/gaditya/instances/projects/Better-Life-Index/utilities/rmq_utils.py", line 16, in create_connection
+    os.getenv("RABBITMQ_PASS", "guest")
+  File "/usr/lib/python3.10/bdb.py", line 90, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.10/bdb.py", line 115, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit
+2025-10-22 12:47:13 [INFO] utilities.rmq_utils: Message published to queue: ml_queue
+2025-10-22 12:51:25 [INFO] utilities.rmq_utils: Message published to queue: ml_queue
+2025-10-22 12:59:21 [INFO] utilities.rmq_utils: Message published to queue: ml_queue
+2025-10-22 13:05:45 [INFO] utilities.rmq_utils: Message published to queue: ml_queue
+2025-10-22 13:12:50 [INFO] utilities.rmq_utils: Message published to queue: ml_queue

@@ -4,3 +4,6 @@ scikit-learn
 pandas
 pydantic
 joblib
+pika
+python-dotenv
+

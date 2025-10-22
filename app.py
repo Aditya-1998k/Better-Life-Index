@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-import joblib
 import pandas as pd
-import os
+import json
 
 # local imports
 from utilities.model_loader import load_model
 from utilities.logging_config import get_logger
+from utilities.rmq_utils import publish_to_rabbimq
 
 logger = get_logger("backend")
 regression_model = load_model('better_life_model_linear_regression.pkl')
@@ -20,6 +20,7 @@ app = FastAPI(title="Better Life Index API")
 class InputData(BaseModel):
     country: str
     gdp_per_capita: float
+    email: str
 
 
 @app.get("/")
@@ -47,12 +48,15 @@ def predict(data: InputData):
         logger.info(f"Prediction for {data.country}: {linear_prediction:.2f} with linear regression model.")
         logger.info(f"Prediction for {data.country}: {kmeans_prediction:.2f} with kmeans cluster model.")
         
-        return {
+        payload = {
+            "user_email": data.email,
             "country": data.country,
             "better_life_index with with Global data (linear regression_model)": round(linear_prediction, 2),
             "better_life_index wrt 3 nearest neibour (kmeans cluster model)": round(kmeans_prediction, 2),
             "comparison": comparison,
         }
+        publish_to_rabbimq("ml_queue", json.dumps(payload))
+        return payload
     except Exception as e:
         logger.error(f"Prediction error: {e}")
         return {"error": "Prediction failed", "details": str(e)}
