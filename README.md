@@ -1,7 +1,8 @@
 # Better Life Index Predictor API
 
-A **FastAPI-based REST API** that predicts the Better Life Index (BLI) for a country based on its GDP per capita. The API returns the predicted BLI along with a comparison to the average. I am using two model one is trained with linear regression which is once trained will not look into the training data again, and always use global data for prediction. And using 2nd model trained with kmeans algorithm which uses each time while prediction training data, to predict for the new data using the 3 nearest neibour.
+A **FastAPI-based REST API** that predicts the Better Life Index (BLI) for a country based on its GDP per capita. The API returns the predicted BLI along with a comparison to the average. I am using two model one is trained with linear regression which is once trained will not look into the training data again, and always use global data for prediction. And using 2nd model trained with kmeans algorithm which uses each time while prediction training data, to predict for the new data using the 3 nearest neibour. 
 
+Try it out: [Live](https://better-life-index.onrender.com/docs)  
 Model Training file: [Training info and Code](https://github.com/Aditya-1998k/Better-Life-Index/blob/main/backend/models/Better_life_index.ipynb)  
 Colab Link : [Google colab](https://github.com/Aditya-1998k/Better-Life-Index/blob/main/backend/models/Better_life_index.ipynb)
 
@@ -15,6 +16,7 @@ Better-Life-Index/
 │── utilities/
 │  ├── init.py
 │  ├── logging_config.py
+|  |--- rmq_utils.py
 │  └── model_loader.py
 | 
 │── var/log/ # Logs for predictions
@@ -61,8 +63,11 @@ pip install -r backend/requirements.txt
 2. run the command : `uvicorn app:app --reload`
 3. Access Swagger UI: http://127.0.0.1:8000/docs
 <img width="1326" height="676" alt="image" src="https://github.com/user-attachments/assets/b2261661-c308-4fce-ab65-4890e673cf6f" />
-4. PostMan
-<img width="940" height="491" alt="image" src="https://github.com/user-attachments/assets/67ecc21f-1028-4e97-918c-0be7f2d18662" />
+4. Bruno
+<img width="1132" height="609" alt="image" src="https://github.com/user-attachments/assets/1a8a9586-2bed-41ed-bdcd-e095611b3fdc" />
+
+### Email Summary:
+<img width="1080" height="745" alt="image" src="https://github.com/user-attachments/assets/90105b7b-4bbb-4183-8f52-1a4a7f8bf161" />
 
 
 ---
