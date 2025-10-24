@@ -12,7 +12,6 @@ logger = get_logger(__name__)
 
 
 def create_connection(retries=5, delay=2):
-    breakpoint()
     credentials = pika.PlainCredentials(
         os.getenv("RABBITMQ_USER", "guest"),
         os.getenv("RABBITMQ_PASS", "guest")

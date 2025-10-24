@@ -40,3 +40,7 @@
 2025-10-22 12:50:06 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/utilities/../models/better_life_model_kmeans.pkl
 2025-10-22 12:50:40 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/utilities/../models/better_life_model_linear_regression.pkl
 2025-10-22 12:50:40 [INFO] model_loader: Model loaded from /home/gaditya/instances/projects/Better-Life-Index/utilities/../models/better_life_model_kmeans.pkl
+2025-10-24 09:52:03 [INFO] model_loader: Model loaded from /Users/aditya/instances/Better-Life-Index/utilities/../models/better_life_model_linear_regression.pkl
+2025-10-24 09:52:04 [INFO] model_loader: Model loaded from /Users/aditya/instances/Better-Life-Index/utilities/../models/better_life_model_kmeans.pkl
+2025-10-24 09:55:16 [INFO] model_loader: Model loaded from /Users/aditya/instances/Better-Life-Index/utilities/../models/better_life_model_linear_regression.pkl
+2025-10-24 09:55:16 [INFO] model_loader: Model loaded from /Users/aditya/instances/Better-Life-Index/utilities/../models/better_life_model_kmeans.pkl
